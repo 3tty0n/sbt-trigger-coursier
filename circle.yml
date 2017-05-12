@@ -1,3 +1,19 @@
+machine:
+  java:
+    version: oraclejdk8
+  timezone:
+    Asia/Tokyo
+
+dependencies:
+  cache_directories:
+    - "~/.sbt"
+    - "target/resolution-cache"
+    - "target/streams"
+    - "project/target/resolution-cache"
+    - "project/target/streams"
+  override:
+    - sbt test:compile
+
 test:
   override:
     - sbt scripted

@@ -23,7 +23,7 @@ If you want to enable in sbt shell, execute as below and you should `reload`.
 
 The contents of `project/coursier.sbt` is as below.
 
-```
+```scala
 addSbtPlugin("io.get-coursier" % "sbt-coursier" % "1.0.0-RC2")
 ```
 

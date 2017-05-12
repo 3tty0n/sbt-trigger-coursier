@@ -4,7 +4,7 @@ import sbt._
 import sbt.Keys._
 
 
-object SbtTriggerCoursier extends AutoPlugin {
+object SbtTriggerCoursierPlugin extends AutoPlugin {
 
   object autoImport {
     lazy val coursier = taskKey[Unit]("the version of coursier")

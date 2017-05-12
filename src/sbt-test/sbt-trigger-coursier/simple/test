@@ -1,0 +1,11 @@
+> enableCoursier
+$ exists project/coursier.sbt
+
+> reload
+> plugins
+
+> disableCoursier
+$ absent project/coursier.sbt
+
+> reload
+> plugins

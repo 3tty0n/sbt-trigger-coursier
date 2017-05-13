@@ -19,7 +19,7 @@ object SbtTriggerCoursierPlugin extends AutoPlugin {
 
   override val projectSettings: Seq[Setting[_]] = Seq(
     name in coursier := "coursier.sbt",
-    version in coursier := "1.0.0-RC2",
+    version in coursier := "1.0.0-RC3",
     projectDirectory := baseDirectory.value / "project",
     enableCoursier := enableCoursierTask.value,
     disableCoursier := disableCoursierTask.value

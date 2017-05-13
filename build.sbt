@@ -6,4 +6,3 @@ lazy val `sbt-trigger-coursier` = (project in file("."))
     organization := "org.micchon",
     sbtPlugin := true
   )
-

@@ -17,9 +17,20 @@ object SbtTriggerCoursierPlugin extends AutoPlugin {
 
   override def trigger: PluginTrigger = allRequirements
 
+  private lazy val coursierVersions = Seq(
+    "1.0.0-RC1",
+    "1.0.0-RC2",
+    "1.0.0-RC3",
+    "1.0.0-RC4",
+    "1.0.0-RC5",
+    "1.0.0-RC6",
+    "1.0.0-RC7",
+    "1.0.0-RC8"
+  )
+
   override val projectSettings: Seq[Setting[_]] = Seq(
     name in coursier := "coursier.sbt",
-    version in coursier := "1.0.0-RC3",
+    version in coursier := coursierVersions.last,
     projectDirectory := baseDirectory.value / "project",
     enableCoursier := enableCoursierTask.value,
     disableCoursier := disableCoursierTask.value
